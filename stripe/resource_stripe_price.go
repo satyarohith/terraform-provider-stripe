@@ -273,9 +273,6 @@ func resourceStripePriceRead(_ context.Context, d *schema.ResourceData, m interf
 							}
 							return tier.UpTo
 						}(),
-						"flat_amount":         tier.FlatAmount,
-						"flat_amount_decimal": tier.FlatAmountDecimal,
-						"unit_amount":         tier.UnitAmount,
 						"unit_amount_decimal": tier.UnitAmountDecimal,
 					}
 					tiers = append(tiers, t)
